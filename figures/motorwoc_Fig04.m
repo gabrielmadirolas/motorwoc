@@ -178,30 +178,30 @@ ylabel('individual error (mm)','fontsize',label_size)
 xlim([ageXAxis(1)-stepAge/2 ageXAxis(end)+stepAge/2])
 % ylim([0 4])
 % 
-% This is to add a vertical line between children and teens
+% % This is to add a vertical line between children and teens
 % xLims = get(gca,'xlim');
 % yLims = get(gca,'ylim');
 % plot([10.5 10.5],[2 4],'k:','linewidth',0.75*line_width)
 % ylim(yLims)
 % plot(ageXAxis(1:end-1)+stepAge/2,distAllTasks,'o','color',colors(1,:),'markerfacecolor',colors(1,:),'markersize',marker_size)
-
-
-line([xLims(1) xLims(2)],[yLims(2) yLims(2)],'color','k')
-line([xLims(2) xLims(2)],[yLims(1) yLims(2)],'color','k')
-
-% toXLabels = {'6','8','10','12','14','16','18'};
-toYLabels = {'0','50','100','150','2','2.5','3','3.5','4'};
-set(gca,'xtick',ageXAxis,'fontsize',15,...
-    'ytick',0:0.5:4,'yTickLabels',toYLabels)
-xlabel('age','fontsize',16)
-   
-text(xLims(1)-0.10*range(xLims),yLims(1)+0.045*range(yLims),'number of subjects',...
-               'verticalalignment','bottom','horizontalalignment','left',...
-               'rotation',90,'fontsize',17)
-
-text(xLims(1)-0.10*range(xLims),yLims(1)+0.56*range(yLims),'individual error (mm)',...
-               'verticalalignment','bottom','horizontalalignment','left',...
-               'rotation',90,'fontsize',17)
+% 
+% 
+% line([xLims(1) xLims(2)],[yLims(2) yLims(2)],'color','k')
+% line([xLims(2) xLims(2)],[yLims(1) yLims(2)],'color','k')
+% 
+% % toXLabels = {'6','8','10','12','14','16','18'};
+% toYLabels = {'0','50','100','150','2','2.5','3','3.5','4'};
+% set(gca,'xtick',ageXAxis,'fontsize',15,...
+%     'ytick',0:0.5:4,'yTickLabels',toYLabels)
+% xlabel('age','fontsize',16)
+%    
+% text(xLims(1)-0.10*range(xLims),yLims(1)+0.045*range(yLims),'number of subjects',...
+%                'verticalalignment','bottom','horizontalalignment','left',...
+%                'rotation',90,'fontsize',17)
+% 
+% text(xLims(1)-0.10*range(xLims),yLims(1)+0.56*range(yLims),'individual error (mm)',...
+%                'verticalalignment','bottom','horizontalalignment','left',...
+%                'rotation',90,'fontsize',17)
 
            
            
